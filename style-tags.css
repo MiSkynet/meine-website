@@ -1,0 +1,12 @@
+.hover-grow {
+  
+}
+
+.hover-grow:hover {
+  color: var(--text-hover-color);
+  transform: scale(1.1);
+}
+
+.top-spacing {
+    margin-top: 3rem;
+}

@@ -1,0 +1,187 @@
+/* Variables */
+
+:root {
+    --background-color: rgb(17, 18, 20);
+    --text-color: rgb(237, 237, 255);
+    --content-border-color: white;
+    --button-background-color: rgb(41, 43, 48);
+    --button-background-color-hover: rgb(80, 84, 94);
+    --text-hover-color: rgb(252, 255, 215);
+}
+
+/* Basic web shit */
+
+html {
+    font-family: "Spline Sans Mono";
+    font-weight: 400;
+    color: var(--text-color);
+    cursor: default;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    background-image: url(assets/background-image.png);
+}
+
+#content {
+    margin: 5% 10% 5% 10%;
+}
+
+/* Main content */
+
+.name-tag-top {
+    display: contents;
+}
+
+#infos-about-me {
+    border: 1px solid var(--content-border-color);
+    padding: 1%;
+}
+
+#heading {
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 200%;
+    font-weight: 350;
+}
+
+#heading p {
+    margin: 0;
+}
+
+#inner-content {
+    margin: 20px;
+    line-height: 200%;
+}
+
+.middle-heading {
+    font-size: 150%;
+    text-decoration: underline;
+    margin: 0;
+}
+
+.small-content {
+    margin-top: 1rem;
+}
+
+/* Socials */
+
+#socials {
+    margin: 40px 10% 0% 0%;
+    display: inline-block;
+    max-width: 50%;
+}
+
+#socials p {
+    margin-bottom: 30px;
+}
+
+#socials a {
+    margin: 0px 10px 20px 0px;
+    display: inline-flex;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--button-background-color);
+    transition: transform .3s ease, color 0.5s ease;
+    align-items: center;
+    gap: 10px;
+}
+
+#socials a:hover {
+    background-color: var(--button-background-color-hover);
+    transform: scale(1.1);
+    color: var(--text-hover-color);
+}
+
+
+#socials a img {
+    height: 25px;
+    transform: content 1s ease;
+}
+
+#socials a p {
+    margin: 0px;
+}
+
+.twitch:hover img {
+    content: url(assets/twitch-icon-colorful.png);
+}
+
+.youtube:hover img {
+    content: url(assets/youtube-icon-colorful.png);
+}
+
+/* .highlight-word {
+    color: var(--highlight-color);
+    font-weight: bold;
+    background-color: var(--highlight-background-color);
+    padding: 2px 4px;
+    border-radius: 4px;
+} */
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInDown 0.6s ease-out forwards;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* This page on GitHub button */
+
+#github-link {
+    margin: 40px 0% 0% 0%;
+    display: inline-block;
+    float: right;
+}
+
+#github-link p {
+    margin-bottom: 30px;
+}
+
+#github-link a {
+    margin-right: 0px;
+    display: inline-flex;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--button-background-color);
+    transition: transform .3s ease, color 0.5s ease;
+    align-items: center;
+    gap: 10px;
+}
+
+#github-link a:hover {
+    background-color: var(--button-background-color-hover);
+    transform: scale(1.1);
+    color: var(--text-hover-color);
+}
+
+#github-link a img {
+    height: 25px;
+    transform: content 1s ease;
+}
+
+#github-link a p {
+    margin: 0px;
+}
+
+/* Load animation */
+
+#heading.fade-in { animation-delay: 0s; }
+#inner-content .fade-in:nth-child(1) { animation-delay: 0.2s; }
+#inner-content .fade-in:nth-child(2) { animation-delay: 0.4s; }
+#inner-content .fade-in:nth-child(3) { animation-delay: 0.5s; }
+#inner-content .fade-in:nth-child(4) { animation-delay: 0.8s; }
+#inner-content .fade-in:nth-child(5) { animation-delay: 1.0s; }
